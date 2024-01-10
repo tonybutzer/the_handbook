@@ -1,0 +1,41 @@
+name: Landsat_1
+channels:
+  - conda-forge
+dependencies:
+  - python=3
+# mahesh Landsat
+  - rasterio
+  - pyproj
+  - matplotlib
+  - scipy
+  - pandas
+  - xlsxwriter
+  - seaborn
+#holoviz
+  - hvplot
+  - geoviews
+  - datashader
+  - fastparquet
+  - python-snappy
+#jupyter
+  - jupyterlab
+  - jupyter-server-proxy
+  - jupyter_core
+  - jupyter_server
+  - widgetsnbextension
+  - dask-labextension
+  - nodejs
+  - notebook=6.4.0
+  - nbclassic=0.3.1
+  - nbclient=0.5.3
+#xarray-related
+  - xarray
+  - rioxarray
+#other 
+  - fsspec
+  - xmltodict
+  - folium
+  - pip
+  - pip:
+    - opencv-python==4.7.0.72
+

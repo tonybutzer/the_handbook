@@ -1,0 +1,40 @@
+
+digraph key {
+rankdir=LR
+node [shape=Mcircle]
+"ODC Year2:"
+node [fontcolor=white fillcolor=indigo shape=diamond style=filled]
+"Trade Studies"
+"Integration Trials"
+"Deep Dives"
+
+"ODC Year2:" -> "Trade Studies"
+"ODC Year2:" -> "Integration Trials"
+"ODC Year2:" -> "Deep Dives"
+
+node [fontcolor=black fillcolor=cornsilk shape=diamond style=filled]
+node [shape=component]
+node [fontcolor=red] "Practical S3"
+
+"Deep Dives" -> "Practical S3"
+node [fontcolor=black]
+"Deep Dives" -> "TBD = More ..."
+"Trade Studies" -> "orchestration"
+node [shape=diamond]
+"Trade Studies" -> "IW + DS Stacks"
+node [shape=component]
+"Integration Trials" -> "DevSeed pixel+meta IWDS Layer"
+"Integration Trials" -> "ODC over LCMAP-IWDS"
+"Integration Trials" -> "LCMAP Applications on ODC"
+
+node [fontcolor=black shape=ellipse]
+node [fillcolor=palegreen shape=cds]
+"LCMAP Applications on ODC" ->  "pyccd Notebook"
+"LCMAP Applications on ODC" ->  "TAP Tool"
+"LCMAP Applications on ODC" ->  "LCMAP Workshop Demos"
+
+"IW + DS Stacks" -> "Straight S3"
+"IW + DS Stacks" -> "Cassandra_Cloud"
+"IW + DS Stacks" -> "ODC Scaffold"
+
+}

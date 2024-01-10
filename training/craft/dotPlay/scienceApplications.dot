@@ -1,0 +1,16 @@
+digraph ODC {
+node [shape=tab]
+Science_Application
+Science_Application -> KMeans_clustering
+Science_Application -> Forests
+Science_Application -> Water
+Science_Application -> Seasons
+Science_Application -> Change
+node [shape=elipse]
+Change -> pyccd [color=red]
+Change -> NDVI_change_detection
+Change -> Coastal
+Change -> Forest_Degradation
+Seasons -> NDVI_Phenology
+}
+

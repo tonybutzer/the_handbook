@@ -1,0 +1,30 @@
+name: gaass_i2i
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  #- _libgcc_mutex=0.1=conda_forge
+  #- _openmp_mutex=4.5=1_gnu
+  - fiona
+  - folium
+  - gdal=3.4.0
+  - geojson=2.5.0
+  - geopandas
+  - pandas
+  - rioxarray
+  - s3fs
+  - scikit-learn
+  - scipy
+  - xarray
+  - yaml
+  - zarr
+  - pipe
+  - pip
+  - pip:
+    - docker==5.0.3
+    - geographiclib==1.52
+    - geopy==2.2.0
+    - pydantic==1.8.2
+    - pystac==1.1.0
+    - pystac-client==0.3.0
+    - typing==3.7.4.3

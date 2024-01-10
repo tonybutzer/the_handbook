@@ -1,0 +1,13 @@
+_images/
+_sources/
+_static/
+africa/
+handbook/
+juphub/
+jupswarm/
+notes/
+odcnote/
+odcops/
+rizbi/
+static/
+wbs/

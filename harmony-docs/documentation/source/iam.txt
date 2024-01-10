@@ -1,0 +1,60 @@
+{
+    "AttachedPolicies": [
+        {
+            "PolicyName": "ReadOnlyAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/ReadOnlyAccess"
+        },
+        {
+            "PolicyName": "lsds-developer-app-integration",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-app-integration"
+        },
+        {
+            "PolicyName": "lsds-developer-management-tools",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-management-tools"
+        },
+        {
+            "PolicyName": "lsds-developer-compute-containers",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-compute-containers"
+        },
+        {
+            "PolicyName": "lsds-developer-compute-ec2",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-compute-ec2"
+        },
+        {
+            "PolicyName": "lsds-developer-compute-misc",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-compute-misc"
+        },
+        {
+            "PolicyName": "lsds-developer-beta-dms",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-beta-dms"
+        },
+        {
+            "PolicyName": "lsds-developer-alpha-ecr",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-alpha-ecr"
+        },
+        {
+            "PolicyName": "lsds-developer-analytics",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-analytics"
+        },
+        {
+            "PolicyName": "lsds-developer-storage",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-storage"
+        },
+        {
+            "PolicyName": "csr-Developer-Permissions-Boundary",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/csr-Developer-Permissions-Boundary"
+        },
+        {
+            "PolicyName": "lsds-developer-database",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-database"
+        },
+        {
+            "PolicyName": "lsds-developer-permission-boundary",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-permission-boundary"
+        },
+        {
+            "PolicyName": "lsds-developer-security-id-compliance",
+            "PolicyArn": "arn:aws:iam::574826924367:policy/lsds-developer-security-id-compliance"
+        }
+    ]
+}

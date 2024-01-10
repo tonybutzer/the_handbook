@@ -1,0 +1,12 @@
+FROM tbutzer/panel-lite
+
+ENV BOKEH_ALLOW_WS_ORIGIN=10.12.69.188,localhost
+
+COPY pie.ipynb /home/pie.ipynb
+
+WORKDIR /home
+
+#CMD panel serve --address 0.0.0.0 --allow-websocket-origin=10.12.69.188 pie.ipynb 
+CMD panel serve --address 0.0.0.0 --prefix=/pie/ pie.ipynb 
+#CMD panel serve --address 0.0.0.0 pie.ipynb 
+

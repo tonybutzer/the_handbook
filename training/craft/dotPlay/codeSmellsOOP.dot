@@ -1,0 +1,20 @@
+
+digraph smells {
+    rankdir="TB"
+    subgraph cluster_0 {
+        node [shape=ellipse]
+
+        rankdir="TB"
+        OOP1
+        OOP1->"Class Divergent Change"
+        OOP1->"Feature Envy"
+        OOP1->"Long Methods/Classes"
+        OOP1->"Lazy Class"
+        OOP1->"Temporary Fields"
+        node [shape=point] c1
+        label = "OOP Code Smells Breakdown";
+    }
+
+
+
+}

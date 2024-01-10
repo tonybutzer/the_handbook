@@ -1,0 +1,55 @@
+
+digraph paper {bgcolor=cornsilk
+
+
+    subgraph cluster_0 { fontcolor=black
+        node [shape=point] c0;
+        node [ style=filled,shape="box",fillcolor="/blues3/1:/blues3/2" ];
+        "Glossary & References"
+        "ODC Functional Breakdown"
+        Approach;
+        Findings;
+        Architecture;
+
+        label = "Overview";
+    }
+
+    subgraph cluster_1 { fontcolor=black
+        node [shape=point] c1;
+        node [ style=filled,shape="box",fillcolor="antiquewhite:aquamarine" ]"stay engaged in ODC but NOT LCMAP/ODC";
+        node [ shape="ellipse",fillcolor="cadetblue1:chocolate1" ]"study similar architectures";
+        node [ shape="ellipse",fillcolor="cadetblue1:chocolate1" ]"S3 is a priority";
+
+        label = "Findings and Recommendation";
+    }
+
+    subgraph cluster_2 { fontcolor=black
+        node [shape=point] c2;
+        node [ style=filled,shape="box",fillcolor="/blues3/1:tomato" ] "Documented?";
+        node [ style=filled,shape="box",fillcolor="/blues3/1:/blues3/2" ];
+        "Views";
+        Examples;
+        Existing;
+        Reference;
+        Notional;
+        node [ style=filled,shape="box",fillcolor="/blues3/1:tomato" ] ODC;
+        node [ style=filled,shape="box",fillcolor="/blues3/1:/blues3/2" ];
+
+        Notional -> Reference;
+        Notional -> Existing;
+        Existing -> LCMAP;
+        Existing -> ODC 
+        Existing -> DevSeed;
+        Examples -> QGIS;
+        Examples -> "Space Shuttle";
+        Views -> Scenarios -> Logical 
+        Logical -> Development 
+        Logical -> Process 
+        Logical -> Physical
+        ODC -> "Documented?"
+
+        label = "Architecture Breakdown";
+    }
+
+    c0 -> c1 -> c2;
+}

@@ -1,0 +1,21 @@
+
+digraph smells {
+    rankdir="TB"
+
+    subgraph cluster_1 {
+        node [shape=ellipse]
+        Style1
+        Style1->"Shotgun Surgery"
+        Style1->"Comment Inadequacy"
+        Style1->"Data Clumps"
+        Style1->"Primitive Obsession"
+        Style1->"Switch Statement"
+        Style1->"Interface Inconsistancy"
+        Style1->"Incomplete Library Class"
+        node [shape=point] c2
+        label = "Code Smells Style Breakdown"
+    }
+
+
+
+}

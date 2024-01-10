@@ -1,0 +1,19 @@
+Application
+Jupyter Notebook
+PYQT App
+Xarray
+ND Array thingy
+pixel_engine
+dc.load
+storage driver
+rasterio(rio)
+GDAL
+boto3
+s3 object storage
+images geotiff COGS
+meta_engine
+dc.find
+index driver
+s3 meta crawler
+db stuff
+metadata

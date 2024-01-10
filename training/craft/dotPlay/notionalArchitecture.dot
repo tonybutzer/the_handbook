@@ -1,0 +1,25 @@
+
+digraph notion {
+node [shape=box3d]
+app
+node [shape=component]
+app -> gui_viewer 
+gui_viewer -> business_logic
+node [shape=box3d]
+gui_viewer -> business_logic
+node [shape=component]
+business_logic -> meta_engine
+business_logic -> pixel_engine
+node [shape=ellipse]
+meta_engine -> generic_IWDS
+pixel_engine -> generic_IWDS
+node [shape=component]
+generic_IWDS -> lambda_IWDS
+node [shape=component style=filled fillcolor=lawngreen]
+generic_IWDS -> LCMAP_IWDS
+node [shape=component style=filled fillcolor=indianred1]
+generic_IWDS -> ODC_IWDS
+node [shape=component style=filled fillcolor=lightblue2]
+generic_IWDS -> S3_IWDS [color=red]
+}
+

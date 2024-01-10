@@ -1,0 +1,21 @@
+
+digraph notion {
+node [shape=component]
+lcmap_microservice
+node [shape=ellipse]
+lcmap_microservice -> generic_IWDS_API
+node [shape=component]
+generic_IWDS_API -> "cassandra_IWDS"
+generic_IWDS_API -> "cloud_optimized_IWDS"
+node [shape=diamond]
+cloud_optimized_IWDS -> "Trade_Study?"
+node [shape=component]
+"Trade_Study?" -> ODC_postgresql
+"Trade_Study?" -> "STAC? "
+"Trade_Study?" -> cassandra_AWS [color=red]
+"Trade_Study?" -> straight_S3 [color=red]
+"Trade_Study?" -> noSQLxy_dynamo_redshift
+node [fontcolor=red] "red=intuition"
+}
+
+

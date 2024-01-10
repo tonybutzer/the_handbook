@@ -1,0 +1,8 @@
+digraph ODC {
+node [shape=component]
+Open_Data_Cube
+Open_Data_Cube -> indexer
+Open_Data_Cube -> xarrayBuilder [color=red]
+Open_Data_Cube -> scienceApplicationCollection
+}
+

@@ -1,0 +1,50 @@
+
+digraph smells {
+node [shape=Mcircle]
+"Code Smells:"
+node [shape=note]
+"Code Smells:" -> OOP
+"Code Smells:" -> Style
+"Code Smells:" -> Complexity
+
+
+    subgraph cluster_0 {
+        node [shape=point] c1
+        node [shape=ellipse]
+
+        OOP1
+        OOP1->"Class Divergent Change"
+        OOP1->"Feature Envy"
+        OOP1->"Long Methods/Classes"
+        OOP1->"Lazy Class"
+        OOP1->"Temporary Fields"
+    }
+
+    subgraph cluster_1 {
+        node [shape=point] c2
+        node [shape=ellipse]
+        Style1
+        Style1->"Shotgun Surgery"
+        Style1->"Comment Inadequacy"
+        Style1->"Data Clumps"
+        Style1->"Primitive Obsession"
+        Style1->"Switch Satement"
+        Style1->"Interface Incosistancy"
+        Style1->"Incomplete Library Class"
+    }
+
+    subgraph cluster_2 {
+        node [shape=point] c3
+        node [shape=ellipse]
+        Complexity1
+        Complexity1->"Duplicate Code"
+        Complexity1->"Message Chains"
+        Complexity1->"Inappropriate Intimacy"
+        Complexity1->"Middle Man"
+        Complexity1->"Speculative Generality"
+    }
+c1->c2->c3;
+
+}
+
+

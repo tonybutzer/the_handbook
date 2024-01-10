@@ -1,0 +1,7 @@
+conda install gdal
+
+mkdir opt
+cd opt
+git clone http://github.com/tonybutzer/lite-stac
+cd lite-stac/lib
+make

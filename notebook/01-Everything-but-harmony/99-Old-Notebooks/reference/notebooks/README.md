@@ -1,0 +1,3 @@
+# Starting jupyter
+
+jupyter notebook

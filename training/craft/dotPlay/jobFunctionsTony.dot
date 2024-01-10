@@ -1,0 +1,42 @@
+digraph G {
+node [style=filled, fillcolor="cyan:yellow",shape=rect]
+n0[label="Big Problem Spaces:"]
+node [style=filled, fillcolor="yellow:cornsilk",shape=octagon]
+n1[label="AWS"]
+n2[label="EO"]
+n3[label="ODC"]
+node [style=filled, fillcolor="yellow:cornsilk",shape=diamond]
+n5[label="Analyze"]
+node [style=filled, fillcolor="yellow:cornsilk",shape=diamond]
+n6[label="Filter"]
+node [style=filled, fillcolor="yellow:orange",shape=cds]
+n7[label="Sort"]
+node [style=filled, fillcolor="yellow:orange",shape=note]
+n4[label="Experiments"]
+n8[label="Integrate"]
+node [style=filled, fillcolor="yellow:green",shape=diamond]
+n9[label="Connect"]
+node [style=filled, fillcolor="yellow:green",shape=ellipse]
+n10a[label="LPIP"]
+n10[label="LSAA"]
+n11[label="LCMAP"]
+n12[label="ODC"]
+node [style=filled, fillcolor="orange:red2",shape=triangle]
+n13[label="Apply!"]
+
+n0->n1
+n0->n2
+n0->n3
+
+n5->n6
+n6->n4
+n6->n7
+n7->n8
+n8->n9
+
+n9->n10a
+n9->n10
+n9->n11
+n9->n12
+n12->n13
+}

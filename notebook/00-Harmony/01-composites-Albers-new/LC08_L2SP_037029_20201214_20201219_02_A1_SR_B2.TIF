@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <title>EROS Registration System</title>
+        <meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1.0">
+<meta name="description" content="Query&#x20;and&#x20;order&#x20;satellite&#x20;images,&#x20;aerial&#x20;photographs,&#x20;and&#x20;cartographic&#x20;products&#x20;through&#x20;the&#x20;U.S.&#x20;Geological&#x20;Survey">
+<meta name="keywords" content="U.S.&#x20;Geological&#x20;Survey,USGS,National&#x20;Mapping&#x20;Division,NMD,USA,&#x0A;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;United&#x20;States,Territories,Antarctica,cartographic,cartography,geographic,&#x0A;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;geography,geospatial&#x20;data,geographic&#x20;information&#x20;system,GIS,mapping,maps,&#x0A;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;aerial&#x20;photographs,satellite&#x20;imagery,digital&#x20;elevation&#x20;model,&#x0A;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;digital&#x20;raster&#x20;graphic,digital&#x20;orthophoto,topographic,topography,&#x0A;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;geographic&#x20;names,earthscience,data,geospatial&#x20;metadata,geospatial&#x20;data&#x20;standards,&#x0A;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;landsat,GNIS,NAPP,DEM,DRG,DOQ,NSDI,Earth&#x20;Explorer,&#x20;EarthExplorer">
+<meta name="author" content="USGS&#x20;-&#x20;U.S.&#x20;Geological&#x20;Survey">
+<meta name="publisher" content="USGS&#x20;-&#x20;U.S.&#x20;Geological&#x20;Survey">
+<meta name="classification" content="Government">
+<meta name="robots" content="ALL">
+<meta name="distribution" content="Global">
+<meta name="rating" content="Safe&#x20;For&#x20;Kids">
+<meta name="copyright" content="None">
+<meta name="language" content="English">
+<meta name="doc-type" content="Government">
+<meta name="doc-class" content="Living&#x20;Document">
+<meta name="doc-rights" content="Public&#x20;Domain">
+<meta http-equiv="X-UA-Compatible" content="IE&#x3D;edge">
+<meta http-equiv="Content-Type" content="text&#x2F;html&#x3B;&#x20;charset&#x3D;utf-8">
+        <!-- Le styles -->
+        <link href="https&#x3A;&#x2F;&#x2F;stackpath.bootstrapcdn.com&#x2F;bootstrap&#x2F;4.3.1&#x2F;css&#x2F;bootstrap.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;css&#x2F;common.css&#x3F;jb&#x3D;2021-01-20" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="https&#x3A;&#x2F;&#x2F;ims.cr.usgs.gov&#x2F;font-awesome&#x2F;stable&#x2F;css&#x2F;all.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;css&#x2F;style.css&#x3F;jb&#x3D;2021-01-20" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;css&#x2F;login.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;css&#x2F;profile.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;img&#x2F;favicon.ico" rel="shortcut&#x20;icon" type="image&#x2F;vnd.microsoft.icon">
+        <!-- Scripts -->
+        <script  src="https&#x3A;&#x2F;&#x2F;ajax.googleapis.com&#x2F;ajax&#x2F;libs&#x2F;jquery&#x2F;3.4.1&#x2F;jquery.min.js"></script>
+<script  src="https&#x3A;&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;popper.js&#x2F;1.14.7&#x2F;umd&#x2F;popper.min.js"></script>
+<script  src="https&#x3A;&#x2F;&#x2F;stackpath.bootstrapcdn.com&#x2F;bootstrap&#x2F;4.3.1&#x2F;js&#x2F;bootstrap.min.js"></script>    </head>
+    <body class="d-flex flex-column h-100">
+        <!-- BEGIN USGS Applications Header Template -->
+        <header id="navbar" class="header-nav" role="banner">
+            <div class="tmp-container">
+                <!-- primary navigation bar -->
+                <!-- search bar -->
+                <div class="header-search">
+                    <a class="logo-header" href="https://www.usgs.gov" title="Home">
+                        <img class="img" src="/img/logo.png?jb=2021-01-20" alt="Home" />
+                    </a>
+                                    </div>
+                <!-- end search bar -->
+            </div>
+            <!-- end header-container -->
+        </header>
+        <!-- END USGS Applications Header Template -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="overflow: visible;">
+            <a class="navbar-brand" href="/">EROS Registration System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbar-menu">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                                    <a class="nav-link " href="/password" >
+                                Change Password                                </a>
+            </li>
+            </ul>
+                
+                <!-- System Notifications -->
+                                                
+                <ul class="navbar-nav">
+                        <li class="nav-item ">
+                                    <a class="nav-link " href="/feedback/" >
+                                Feedback                                </a>
+            </li>
+                                <li class="nav-item ">
+                                      
+                    <a class="nav-link " href="/login" aria-label="Login">
+                                Login                                </a>
+            </li>
+            </ul>
+            </div>
+        </nav>
+        
+        
+        <div class="container-fluid">
+            <style type="text/css">
+	#pageError {
+		background-color: #ffe6bf;
+		border: 1px solid #ffce80;
+		border-radius: 0 0 10px 10px;
+		margin: 0 auto;
+		padding: 10px;
+		text-align: center;
+		width: 65%;
+	}
+</style>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#loginButton').button();
+
+        $('.oAuthType').click(function()
+        {
+        	window.location = '/login' + $(this).attr('data-serviceKey');
+        });
+
+        $('#registerButton').button().click(function()
+        {
+        	document.location = '/register';
+        });
+
+        $('#username').focus();
+    });
+</script>
+
+
+
+<div id="loginHeading">
+    	    <p>ERS consolidates user profile and authentication for all EROS web services into a single independent application.</p>
+	</div>
+<div id="centeredContainer">
+
+	<h2>Sign In</h2>
+		<div class="seperator">
+		<span></span>
+		sign in with your existing USGS registered username and password
+		<span></span>
+	</div>
+	<form method="post" name="loginForm" id="loginForm">		<div>
+			<div class="inputContainer">
+				<input type="text" name="username" placeholder="&#x20;Registered&#x20;USGS&#x20;Username" maxlength="30" aria-label="userName" value="">							</div>
+			<div class="inputContainer">
+				<input type="password" name="password" placeholder="Registered&#x20;USGS&#x20;Password" aria-label="password" value="">							</div>
+					</div>
+		<div class="signinOptions clearfix">
+			<div id="forgotPasswordContainer">
+				<a href="/password" style="color:#0060C5; text-decoration: underline;">forgot password?</a>
+			</div>
+		</div>
+		<input type="hidden" name="csrf" value="8da41a5f37b266d0a88f7faa9074ee79-b037b204c7e8bf26d1f32d7bf87f3543">		<input id="loginButton" type="submit" value="Sign In" class="ui-button ui-corner-all ui-widget" role="button" />
+	</form>
+	<div class="seperator">
+		<span></span>
+		Don't have an account?
+		<span></span>
+	</div>
+	<input type="button" id="registerButton" value="Create New Account" class="ui-button ui-corner-all ui-widget" role="button" />
+</div>
+</br>
+
+<style type="text/css">
+    #praMessage{
+        border-bottom: 1px solid #CCCCCC;
+        border-top: 1px solid #CCCCCC;
+        font-size: 0.9em;
+        font-style: italic;
+        padding: 5px 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+</style>
+
+<div id="praMessage">
+    OMB number 1028-0119</br>
+    OMB expiration date 08/31/2021</br><br>
+​    Privacy and Paperwork Reduction Act statements: 16 U.S.C. 1a7 authorized collection of this 
+    information. This information will be used by the U.S. Geological Survey to better serve the public. 
+    The time required to complete this information collection is estimated to 
+    average 2 minutes per response.  We will not distribute responses associated with you as an individual.  
+    We ask you for some basic organizational and contact information to help us interpret the results and, 
+    if needed, to contact you for clarification.  Comments on this collection should be sent to 
+    <a href="mailto:custserv@usgs.gov" style="color:#0060C5; text-decoration: underline;">custserv@usgs.gov</a>.​
+</div>
+        </div>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <div>
+                        <ul class="menu nav">
+                            <li><a href="https://www.doi.gov/privacy">DOI Privacy Policy</a></li>
+                            <li><a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a></li>
+                            <li><a href="https://www.usgs.gov/accessibility-and-us-geological-survey">Accessibility</a></li>
+                            <li><a href="https://www.usgs.gov/sitemap.html">Site Map</a></li>
+                            <li><a href="https://answers.usgs.gov/">Contact USGS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="d-flex">
+                    <div>
+                        <ul class="menu nav">
+                            <li><a href="https://www.doi.gov/">U.S. Department of the Interior</a></li>
+                            <li><a href="https://www.doioig.gov/">DOI Inspector General</a></li>
+                            <li><a href="https://www.whitehouse.gov/">White House</a></li>
+                            <li><a href="https://www.whitehouse.gov/omb/management/egov/">E-gov</a></li>
+                            <li><a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a></li>
+                            <li><a href="https://www.usgs.gov/foia">FOIA</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ml-auto footer-icons">
+                        <ul>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
+            <script async type="text/javascript" src="https://www2.usgs.gov/scripts/analytics/usa-search.js"></script>
+            <script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script>
+
+            <script type="text/javascript">
+                try {
+                    ga('set', 'anonymizeIp', true);
+
+                    ga('create', 'UA-21295076-2', 'auto', {'name': 'lta'});
+
+                    //Assuming this is what will be required once usgs analytics is updated
+                    ga('lta.send', 'pageview');
+                } catch (exception) {
+                    // Ignore the exception and continue loading EE
+                    console.log(exception);
+                }
+            </script>
+        
+            </body>
+</html>
+

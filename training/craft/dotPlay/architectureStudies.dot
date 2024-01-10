@@ -1,0 +1,10 @@
+digraph arch {
+
+architecture_studies
+architecture_studies -> proposed
+architecture_studies -> completed
+completed -> ODC [color=red]
+proposed -> lcmap
+proposed -> developmentSeed
+
+}

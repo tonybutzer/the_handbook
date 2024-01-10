@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+      body {font-size: 1.6em;}
+      .hidden {display:none;}
+      .show {display:inline !important;}
+      button {
+        border: 2px solid black; background: #E5E4E2;
+        font-size: .5em; font-weight: bold; color: black;
+        padding: .8em 2em;
+        margin-top: .4em;
+      }
+    </style>
+
+  </head>
+  <body>
+  <p id="sayHello"></p>
+
+<script>
+  console.log("hello logger");
+  // ---------- EVENT HANDLING ----------
+function openAlert(mess){
+  
+  console.log(mess);
+  console.log('where does this go');
+
+  alert(mess);
+}
+</script>
+
+<!-- Open alert on click -->
+<a href="JavaScript:void(0)" onClick="alert('Hello');">Say Hello</a><br />
+ 
+<!-- Call a function on click -->
+<a href="JavaScript:void(0)" onClick="openAlert('Hi how are you');">Say Something</a><br />
+ 
+<!-- Change text color on mouse rollover and roll out-->
+<a href="JavaScript:void(0)" onmouseover="this.style.color='red';"
+onmouseout="this.style.color='blue';"
+ondblclick="this.text='You Double Clicked Me'"
+onmousedown="this.text='Don\'t Press So hard'"
+onmouseup="this.text='Thank You'">Make me Red</a><br />
+ 
+<!-- Get value in an input element and open alert on change -->
+<input type="text" id="randInput"
+onChange="var dataEntered=document.getElementById('randInput').value; openAlert('User Typed ' + dataEntered);"
+ 
+
+ 
+
+
+</body><b></b>
+

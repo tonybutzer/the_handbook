@@ -1,0 +1,30 @@
+digraph key {
+rankdir=LR
+node [shape=Mcircle]
+"Tony ODC \n Current Work:"
+node [fontcolor=black fillcolor=pink shape=diamond style=filled]
+"Tony ODC \n Current Work:" -> "A1 - Architecture Studies"
+"Tony ODC \n Current Work:" -> "A2 - My Summer Vacation"
+"Tony ODC \n Current Work:" -> "B1 - Data Dog Level 2 CSIRO"
+"Tony ODC \n Current Work:" -> "B2 - Integration Efforts"
+"Tony ODC \n Current Work:" -> "C1 - ODC Collaboration and Mgmt"
+
+node [fontcolor=black fillcolor=cornsilk shape=diamond style=filled]
+node [shape=component]
+node [fontcolor=red] 
+
+"A1 - Architecture Studies" -> "ODC Core- deep dive" 
+node [fontcolor=black] 
+"A1 - Architecture Studies" -> "LCMAP pending" 
+"A1 - Architecture Studies" -> "DevelopmentSeed tools & techniques" 
+
+node [fontcolor=red] 
+"B1 - Data Dog Level 2 CSIRO" -> "espaDog"
+node [fontcolor=black] 
+
+"B2 - Integration Efforts" -> "pyccd on top of ODC USARD"
+"B2 - Integration Efforts" -> "LCMAP adhoc products on top of ODC USARD"
+
+"C1 - ODC Collaboration and Mgmt" -> "Steering Council and GA Tagups"
+
+}

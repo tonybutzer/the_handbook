@@ -1,0 +1,18 @@
+
+digraph smells {
+    rankdir="TB"
+
+    subgraph cluster_2 {
+        node [shape=ellipse]
+        Complexity1
+        Complexity1->"Duplicate Code"
+        Complexity1->"Message Chains"
+        Complexity1->"Inappropriate Intimacy"
+        Complexity1->"Middle Man"
+        Complexity1->"Speculative Generality"
+        node [shape=point] c3
+        
+        label = "Complexity Code Smells"
+    }
+
+}

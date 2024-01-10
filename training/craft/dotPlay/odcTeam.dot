@@ -1,0 +1,58 @@
+digraph G {
+node [ style=filled shape="Mcircle",fillcolor="green:aliceblue" ];
+nc[label="CSIRO\nUSGS\n& Partner\nTeams"]
+node [ shape="note",fillcolor="yellow:chocolate1" ];
+n1[label="APP/Notebook\n Developers"]
+node [ shape="Mcircle",fillcolor="yellow:cadetblue1" ];
+n6[label="pyCCD\nTeam"]
+node [ shape="Mcircle",fillcolor="yellow:chocolate1" ];
+n2[label="AMA"]
+node [ shape="ellipse",fillcolor="yellow:chocolate1" ];
+n3[label="Otto W."]
+n4[label="Andrew C."]
+n5[label="Syed"]
+node [ style=filled shape="component",fillcolor="cadetblue1:chocolate1" ];
+n7[label="Backend Library\n Package Developers"]
+node [ style=filled shape="doubleoctagon",fillcolor="gold:yellowgreen" fontsize=24];
+n0[label="ODC\nDeveloper\nSpace"]
+node [ style=filled shape="Mcircle",fillcolor="cadetblue1:chocolate1" fontsize=14];
+n8[label="GA"]
+node [ style=filled shape="ellipse",fillcolor="cadetblue1:chocolate1" ];
+n9[label="Gregor"]
+n10[label="Kirill"]
+n11[label="Jeremey H."]
+n12[label="Damien"]
+n13[label="Andrew Hicks"]
+node [ shape="Mcircle",fillcolor="pink:aliceblue" ];
+n14[label="DEA"]
+node [ shape="ellipse",fillcolor="red2:aliceblue" ];
+n15[label="Simon O."]
+n16[label="Wenjun"]
+
+n1
+n2->n1
+n3->n1
+n4->n1
+n5->n1
+n6->n1
+
+#n6->n3
+
+n1->n7
+
+n7->n8
+n7->n9
+n7->n10
+n7->n11
+n7->n12
+n7->n13
+
+n14
+n14->n15
+n15->n16
+
+n14->n7 [color=red]
+
+nc->n1 [color=black]
+nc->n7 [color=red]
+}

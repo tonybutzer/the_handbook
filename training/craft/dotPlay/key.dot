@@ -1,0 +1,19 @@
+
+digraph key {
+node [shape=Mcircle]
+"Key:"
+node [shape=ellipse]
+"ellipse=generic_interface"
+node [shape=component]
+component
+node [fontcolor=red] "red=intuition"
+node [fontcolor=black shape=diamond] "Choice?"
+
+"Key:" -> "ellipse=generic_interface" -> component
+
+component -> "red=intuition"
+component -> "Choice?"
+
+}
+
+

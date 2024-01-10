@@ -1,0 +1,59 @@
+
+digraph smells {
+    rankdir="TB"
+    subgraph cluster_0 {
+        node [shape=ellipse]
+
+        rankdir="TB"
+        OOP1
+        OOP1->"Class Divergent Change"
+        OOP1->"Feature Envy"
+        OOP1->"Long Methods/Classes"
+        OOP1->"Lazy Class"
+        OOP1->"Temporary Fields"
+        node [shape=point] c1
+        label = "Architecture Breakdown";
+    }
+
+    node [shape=circle] REALLYBIBIGBIGBIGBIGBIGBIGspace1
+    node [shape=circle] space2
+    node [shape=circle] space3
+    node [shape=circle] space4
+    node [shape=circle] space5
+    node [shape=circle] space6
+    node [shape=circle] space7
+
+    subgraph cluster_1 {
+        node [shape=ellipse]
+        Style1
+        Style1->"Shotgun Surgery"
+        Style1->"Comment Inadequacy"
+        Style1->"Data Clumps"
+        Style1->"Primitive Obsession"
+        Style1->"Switch Satement"
+        Style1->"Interface Incosistancy"
+        Style1->"Incomplete Library Class"
+        node [shape=point] c2
+        label = "Architecture Breakdown";
+    }
+
+    subgraph cluster_2 {
+        node [shape=ellipse]
+        Complexity1
+        Complexity1->"Duplicate Code"
+        Complexity1->"Message Chains"
+        Complexity1->"Inappropriate Intimacy"
+        Complexity1->"Middle Man"
+        Complexity1->"Speculative Generality"
+        node [shape=point] c3
+        
+        label = "Architecture Breakdown";
+    }
+
+    #edge[constraint=false];
+    "Class Divergent Change" -> "Shotgun Surgery" ->"Duplicate Code"
+    #c1->c2->c3;
+
+
+
+}

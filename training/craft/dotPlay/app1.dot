@@ -1,0 +1,19 @@
+digraph G {
+
+node [style=filled, fillcolor="yellow:orange",shape=note]
+n0[label="App"]
+node [style=filled, fillcolor="yellow:cornsilk",shape=component]
+n1[label="pixel_engine"]
+n2[label="meta_engine"]
+node [style=filled, fillcolor="yellow:cyan",shape=folder]
+n3[label="EO Data"]
+n4[label="Metadata"]
+
+n0->n1
+n0->n2
+
+n1->n3
+n2->n4
+
+
+}

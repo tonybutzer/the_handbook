@@ -1,0 +1,46 @@
+name: olena
+channels:
+  - conda-forge
+dependencies:
+  - python=3
+
+# olenas
+  - seaborn
+  - scikit-image
+  - pystac-client
+  - xarray-spatial
+  - fiona
+#holoviz
+  - hvplot
+  - geoviews
+  - datashader
+  - fastparquet
+  - python-snappy
+#jupyter
+  - jupyterlab 
+  - jupyter-server-proxy
+  - widgetsnbextension
+  - dask-labextension
+  - nodejs
+#xarray-related
+  - xarray
+  - intake-xarray
+  - dask
+    #- dask distributed
+  - dask-jobqueue
+  - zarr
+  - h5netcdf
+  - rechunker
+  - xesmf
+  - rioxarray
+#other 
+  - fsspec
+  - s3fs
+  - erddapy
+  - xmltodict
+  - folium
+#aws
+  - boto3
+#ODC
+  - datacube
+  - odc-stac

@@ -1,0 +1,23 @@
+FROM geo-jupyter
+
+ENV DATACUBE_VERSION=develop
+
+ENV LC_ALL=C.UTF-8
+ENV LANG="$LC_ALL"
+
+RUN apt-get update && apt-get install libudunits2-0 && apt-get install udunits-bin
+
+# Deal with psycopg2 binary warning
+RUN pip3 install --no-cache --no-binary :all: psycopg2
+
+## Datacube
+
+RUN pip3 install --no-cache \
+    'git+https://github.com/opendatacube/datacube-core.git@'"${DATACUBE_VERSION}"'#egg=datacube[s3,test]'
+
+# clean up
+RUN apt-get clean && \
+rm -rf /var/lib/apt/lists/*
+
+# switch to notebook user
+USER "$NB_USER"

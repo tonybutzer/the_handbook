@@ -1,0 +1,47 @@
+digraph G {
+
+node [style=filled, fillcolor="yellow:orange",shape=note]
+n0[label="App"]
+node [style=filled, fillcolor="cornsilk:plum1",shape=ellipse]
+n1[label="RESTi pixel"]
+n2[label="RESTi meta"]
+node [style=filled, fillcolor="yellow:cornsilk",shape=component]
+n1a[label="pixel_engine"]
+n2a[label="meta_engine"]
+node [style=filled, fillcolor="aliceblue:lightsteelblue",shape=component]
+n2b[label="WMS"]
+node [style=filled, fillcolor="aliceblue:lightsteelblue",shape=diamond]
+ni[label="interface"]
+nc[label="choose?"]
+node [style=filled, fillcolor="aliceblue:pink",shape=component]
+n2c[label="datacube"]
+node [style=filled, fillcolor="aliceblue:coral",shape=component]
+n2d[label="IW + DS"]
+node [style=filled, fillcolor="yellow:cyan",shape=folder]
+node [style=filled, fillcolor="lightsteelblue:violet",shape=component]
+n2e[label="DevSeed ..."]
+node [style=filled, fillcolor="yellow:cyan",shape=folder]
+n3[label="EO Data"]
+n4[label="Metadata"]
+
+n0->n1->n1a
+n0->n2->n2a
+
+n1a->n2b
+n2a->n2b
+
+ni->n3
+ni->n4
+
+
+n2b->nc
+nc->n2d
+nc->n2c
+nc->n2e
+
+n2c->ni
+n2d->ni
+n2e->ni
+
+
+}

@@ -1,0 +1,20 @@
+digraph G {
+node [ style=filled shape="doubleoctagon",fillcolor="gold:yellowgreen" fontsize=24];
+#n0[label="ODC\nArchitecture"]
+node [ style=filled shape="Mcircle",fillcolor="cadetblue1:chocolate1" fontsize=18];
+node [ shape="ellipse",fillcolor="yellow:chocolate1" ];
+n1[label="APP"]
+node [ shape="note",fillcolor="yellow:cadetblue1" ];
+n2[label="Red"]
+n3[label="Green"]
+n4[label="Blue"]
+n5[label="Swir(s)\nNir"]
+n6[label="QA"]
+
+
+n1->n2
+n1->n3
+n1->n4
+n1->n5
+n1->n6
+}

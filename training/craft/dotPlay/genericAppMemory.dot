@@ -1,0 +1,43 @@
+digraph G {
+na[label="Applications"]
+node [style=filled, fillcolor="chartreuse:cadetblue",shape=component]
+node [shape=ellipse]
+n0[label="drivers read/write"]
+n1[label="memory constructs"]
+n2[label="disk constructs"]
+node [style=filled, fillcolor="yellow:cornsilk",shape=component]
+n4[label="numpy"]
+n5[label="xarray"]
+n6[label="pandas"]
+n3[label="netcdf zarr dask"]
+n31[label="geotiff COG"]
+
+node [style=filled, fillcolor="bisque:burlywood4",shape=component]
+node [shape=rect]
+n7[label="sql structured"]
+n8[label="dictionaries"]
+n9[label="class objects instance variables"]
+n10[label="pickled objects"]
+
+na -> n0
+n0 -> n1
+n0 -> n2
+
+n2 -> n31 
+n2 -> n3 
+n2 -> n10
+
+n1 -> n4
+n1 -> n5
+n1 -> n6
+
+
+n5 -> n3
+n5 -> n6
+n5 -> n4
+
+n1 -> n8 -> n7 -> n9
+
+n9 -> n10
+
+}

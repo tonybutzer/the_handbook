@@ -1,0 +1,7 @@
+matplotlib
+matplotlib_venn
+pandas
+seaborn
+plotly
+boto3
+awscli

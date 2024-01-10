@@ -1,0 +1,8 @@
+# Handling Next Generation Data Architecture
+
+Or how to handle lots of data with a small team
+https://medium.com/@KevinSchmidtBiz/next-generation-data-architecture-31f03141a19a
+
+
+http://jbrazile.blogspot.com/2012/04/postscript-flowchart-symbols-for.html
+

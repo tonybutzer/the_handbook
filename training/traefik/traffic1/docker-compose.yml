@@ -1,0 +1,50 @@
+version: "3"
+services:
+
+  traefik:
+    image: traefik:alpine
+    labels:
+      - traefik.frontend.rule=Host:traefik.traffic1
+      - traefik.port=8080
+      - traefik.enable=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${PWD}/traefik.toml:/etc/traefik/traefik.toml
+    ports:
+      - 80:80
+      - 8080:8080 
+
+  jup:
+    image: nginx:alpine
+    labels:
+      - traefik.frontend.rule=PathPrefixStrip:/jup
+      - traefik.port=80
+      - traefik.enable=true
+    volumes:
+      - /opt/jup/juphub/docs/build/html:/usr/share/nginx/html
+
+  djup:
+    image: nginx:alpine
+    labels:
+      - traefik.frontend.rule=PathPrefixStrip:/djup
+      - traefik.port=80
+      - traefik.enable=true
+    volumes:
+      - /opt/jup/djup/docs/build/html:/usr/share/nginx/html
+
+  training:
+    image: nginx:alpine
+    labels:
+      - traefik.frontend.rule=PathPrefixStrip:/training
+      - traefik.port=80
+      - traefik.enable=true
+    volumes:
+      - /opt/training/docs/build/html:/usr/share/nginx/html
+
+  kanboard:
+        image: kanboard/kanboard:latest
+        ports:
+                - 7777:80
+        volumes:
+        - ${PWD}/kanboard_data:/var/www/app/data
+        - ${PWD}/kanboard_plugins:/var/www/app/plugins

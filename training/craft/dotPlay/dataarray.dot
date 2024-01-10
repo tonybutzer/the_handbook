@@ -1,0 +1,6 @@
+digraph "classes_No_Name" {
+charset="utf-8"
+rankdir=RL
+"0" [label="{DataArray|attrs\lattrs\lchunks\lcoords\ldata\ldims\ldt : property\ldtype\lencoding\limag\lindexes\lloc\lname\lnbytes\lndim\lplot\lreal\lshape\lsize\lvalues\lvariable\l|bfill()\lbroadcast_equals()\lchunk()\lcombine_first()\lcompute()\lcopy()\ldiff()\ldot()\ldrop()\ldropna()\lequals()\lexpand_dims()\lffill()\lfillna()\lfrom_cdms2()\lfrom_dict()\lfrom_iris()\lfrom_series()\lidentical()\linterp()\linterp_like()\linterpolate_na()\lisel()\lisel_points()\lload()\lpersist()\lquantile()\lrank()\lreduce()\lreindex()\lreindex_like()\lrename()\lreorder_levels()\lreset_coords()\lreset_index()\lroll()\lsel()\lsel_points()\lset_index()\lshift()\lsortby()\lstack()\lswap_dims()\lto_cdms2()\lto_dataframe()\lto_dataset()\lto_dict()\lto_index()\lto_iris()\lto_masked_array()\lto_netcdf()\lto_pandas()\lto_series()\ltranspose()\lunstack()\l}", shape="record"];
+"1" [label="{_LocIndexer|data_array\l|}", shape="record"];
+}

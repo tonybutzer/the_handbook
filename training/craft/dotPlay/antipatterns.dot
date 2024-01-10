@@ -1,0 +1,33 @@
+
+digraph anti { bgcolor=cornsilk
+
+    subgraph cluster_0 { fontcolor=black
+        node [shape=point] c0;
+        node [fontcolor= black shape=ellipse]
+        Cultural 
+        Design
+        Development 
+        Architecture
+        node [fontcolor=red shape=Mcircle] Antipatterns
+
+        label = "High Level Antipatterns";
+
+    }
+
+    subgraph cluster_1 { fontcolor=black
+        node [shape=point] c1;
+        node [fontcolor= black shape=ellipse]
+        "We always did it this way"
+        "Fire Fight While you Research"
+        "Always Silo for the Work"
+        node [fontcolor=red shape=Mcircle] Cultural_Antipatterns
+
+        label = "Cultural Antipatterns";
+    }
+
+
+c0 -> c1;
+
+}
+
+

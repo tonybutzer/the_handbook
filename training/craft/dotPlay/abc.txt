@@ -1,0 +1,11 @@
+Applications
+memory constructs
+disk constructs
+netcdf zarr dask
+numpy 
+xarray
+pandas
+sql structured
+dictionaries
+class objects instance variables
+pickled objects

@@ -1,0 +1,7 @@
+digraph dum {
+a1 [label="line one"]
+a2[label="line two and more"]
+a3[label="line three"]
+
+a1->a2->a3
+}

@@ -1,0 +1,13 @@
+,id,title,description
+0,landsat-c1l2alb-ta,Landsat Collection 1 Level-2 Albers Top of Atmosphere (TA) Reflectance Product,The Landsat Top of Atmosphere (TA) Reflectance product applies per pixel angle band corrections to the Level-1 radiance product.
+1,landsat-c2l2alb-bt,Landsat Collection 2 Level-2 Albers Top of Atmosphere Brightness Temperature (BT) Product,"The Landsat Top of Atmosphere Brightness Temperature (BT) product is a top of atmosphere product with radiance calculated 'at-sensor', not atmospherically corrected, and expressed in units of Kelvin."
+2,landsat-c2l2alb-ta,Landsat Collection 2 Level-2 Albers Top of Atmosphere (TA) Reflectance Product,The Landsat Top of Atmosphere (TA) Reflectance product applies per pixel angle band corrections to the Level-1 radiance product.
+3,landsat-c2l2alb-st,Landsat Collection 2 Level-2 Albers Surface Temperature (ST) Product,The Landsat Surface Temperature (ST) product represents the temperature of the Earth's surface in Kelvin (K).
+4,landsat-c1l2alb-st,Landsat Collection 1 Level-2 Albers Surface Temperature (ST) Product,The Landsat Surface Temperature (ST) product represents the temperature of the Earth's surface in Kelvin (K).
+5,landsat-c2l2-sr,Landsat Collection 2 Level-2 UTM Surface Reflectance (SR) Product,The Landsat Surface Reflectance (SR) product measures the fraction of incoming solar radiation that is reflected from Earth's surface to the Landsat sensor.
+6,landsat-c2l2-st,Landsat Collection 2 Level-2 UTM Surface Temperature (ST) Product,The Landsat Surface Temperature (ST) product represents the temperature of the Earth's surface in Kelvin (K).
+7,landsat-c1l1,Landsat Collection 1 Level-1 Product,The Landsat Level-1 product is a top of atmosphere product distributed as scaled and calibrated digital numbers.
+8,landsat-c1l2alb-bt,Landsat Collection 1 Level-2 Albers Top of Atmosphere Brightness Temperature (BT) Product,"The Landsat Top of Atmosphere Brightness Temperature (BT) product is a top of atmosphere product with radiance calculated 'at-sensor', not atmospherically corrected, and expressed in units of Kelvin."
+9,landsat-c1l2alb-sr,Landsat Collection 1 Level-2 Albers Surface Reflectance (SR) Product,The Landsat Surface Reflectance (SR) product measures the fraction of incoming solar radiation that is reflected from Earth's surface to the Landsat sensor.
+10,landsat-c2l1,Landsat Collection 2 Level-1 Product,The Landsat Level-1 product is a top of atmosphere product distributed as scaled and calibrated digital numbers.
+11,landsat-c2l2alb-sr,Landsat Collection 2 Level-2 Albers Surface Reflectance (SR) Product,The Landsat Surface Reflectance (SR) product measures the fraction of incoming solar radiation that is reflected from Earth's surface to the Landsat sensor.

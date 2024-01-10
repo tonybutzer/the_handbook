@@ -1,0 +1,27 @@
+digraph G {
+
+node [style=filled, fillcolor="yellow:orange",shape=note]
+n0[label="App"]
+node [style=filled, fillcolor="cornsilk:plum1",shape=ellipse]
+n1[label="RESTi pixel"]
+n2[label="RESTi meta"]
+node [style=filled, fillcolor="yellow:cornsilk",shape=component]
+n1a[label="pixel_engine"]
+n2a[label="meta_engine"]
+node [style=filled, fillcolor="tan1:cornsilk",shape=component]
+n2b[label="datacube"]
+node [style=filled, fillcolor="yellow:cyan",shape=folder]
+n3[label="EO Data"]
+n4[label="Metadata"]
+
+n0->n1->n1a
+n0->n2->n2a
+
+n1a->n2b
+n2a->n2b
+
+n2b->n3
+n2b->n4
+
+
+}

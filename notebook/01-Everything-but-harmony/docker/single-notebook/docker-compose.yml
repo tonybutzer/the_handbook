@@ -1,0 +1,11 @@
+version: '3'
+services:
+  
+  jupyter:
+    image: jupyter/r-notebook
+    ports:
+      - "8080:8888"
+    volumes:
+      - ./work:/home/jovyan/work
+    command: jupyter notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml'
+

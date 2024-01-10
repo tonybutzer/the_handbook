@@ -1,0 +1,20 @@
+
+digraph notion {
+node [shape=component]
+lcmap_microservice
+node [shape=ellipse]
+lcmap_microservice -> generic_orchestration 
+node [shape=component]
+generic_orchestration -> "mesos/spark"
+generic_orchestration -> kubernetes
+node [shape=diamond]
+kubernetes -> "Trade_Study?"
+node [shape=component]
+"Trade_Study?" -> kubernetes_k8s [color=red]
+"Trade_Study?" -> ECS 
+"Trade_Study?" -> lambda
+"Trade_Study?" -> "AWS/Batch"
+"Trade_Study?" -> swarm
+"Trade_Study?" -> "mesos/spark_s3"
+}
+
